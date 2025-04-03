@@ -30,13 +30,13 @@ export function AddItemForm({ onNewItem }) {
     return (
         <Form onSubmit={submitNewItem}>
             <InputGroup className="mb-3">
-                <Form.Control
-                    value={newItem}
-                    onChange={(e) => setNewItem(e.target.value)}
-                    type="text"
-                    placeholder="New Item"
-                    aria-label="New item"
-                />
+            <Form.Control
+    value={newItem}
+    onChange={(e) => setNewItem(e.target.value)}
+    type="text"
+    placeholder="What do you need to do?"
+    aria-label="New item"
+/>
                 <Button
                     type="submit"
                     variant="success"
